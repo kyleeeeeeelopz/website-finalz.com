@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - T-Shirt Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            background-color: #fff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #007bff;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+        .faq-answer-visible {
+            display: block;
+        }
+        .faq-answer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FAQ - T-Shirt Products</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">What sizes are available?</div>
+            <div class="faq-answer">
+                <p>We offer t-shirts in a wide range of sizes, from small to XXXL. Please refer to our size chart for specific measurements.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I customize my t-shirt?</div>
+            <div class="faq-answer">
+                <p>Yes, we offer customization options for certain t-shirt designs. Contact our customer support team for more information.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What materials are your t-shirts made of?</div>
+            <div class="faq-answer">
+                <p>Our t-shirts are made of high-quality cotton blend fabric for comfort and durability.</p>
+            </div>
+        </div>
+
+        <!-- Add more FAQ items here -->
+
+    </div>
+
+    <script>
+        // JavaScript to toggle FAQ answers visibility
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('faq-answer-visible');
+            });
+        });
+    </script>
+</body>
+</html>
